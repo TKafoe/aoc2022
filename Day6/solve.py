@@ -1,0 +1,1 @@
+print(next(i for i in range(13, len(open('input.txt', 'r').read())) if len(set(open('input.txt', 'r').read()[i - 13: i + 1])) == 14) + 1)
